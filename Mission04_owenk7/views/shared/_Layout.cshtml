@@ -1,0 +1,31 @@
+﻿<!--Combined layout page for all pages-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/meme_doge_dog.png" type="image/icon type">
+    <title>@ViewData["title"]</title>
+    <!--links to bootstrap and my style sheet-->
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/myCSS/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <a asp-controller="subviews" asp-action="Index">Home</a>
+        <a asp-controller="subviews" asp-action="FormView">Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--jQuery and Javascript tags-->
+    <script src="~/jQuery/jquery-3.6.3.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/JavaScript.js"></script>
+</body>
+</html>
