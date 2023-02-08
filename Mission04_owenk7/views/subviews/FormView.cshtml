@@ -5,7 +5,6 @@
 
 }
 @model FormModel;
-
 <!--Beginning of code for Calculator-->
 <h2>Super Awesome IS 413 Grade Calculator: </h2>
 
@@ -28,7 +27,7 @@
     <label>INTEX: </label>
     <input id="intex" type="number" asp-for="intex" value="INTEX" />
     <br />
-    <input id="submit" type="submit" name="button" value="Submit" />
+    <button type="submit">Submit</button>
     <h2 id="output"></h2>
 
     <div asp-validation-summary="All"></div>
